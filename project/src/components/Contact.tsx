@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     // This would normally send the form data to a server
     console.log('Form data:', formData);
-    alert('Message sent! (This is a demo)');
+    alert('Please try using the email link to send your message.');
     // Reset form
     setFormData({ name: '', email: '', message: '' });
   };

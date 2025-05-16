@@ -7,6 +7,14 @@ import Button from './ui/Button';
 import { education, experience } from '../data/resumeData';
 
 const Resume: React.FC = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/My-resume.pdf';
+    link.download = 'resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -33,10 +41,9 @@ const Resume: React.FC = () => {
         <Button 
           variant="primary" 
           icon={<Download className="w-4 h-4" />}
-          href="/resume.pdf"
-          download
+          onClick={handleDownload}
         >
-          Download CV
+          Download Resume
         </Button>
       </div>
       
