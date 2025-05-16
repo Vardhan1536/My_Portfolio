@@ -78,81 +78,25 @@ const About: React.FC = () => {
         </motion.div>
         
         {/* Abstract Visual Element */}
-        <motion.div 
-          className="lg:col-span-5 h-80 lg:h-auto relative"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-        >
-          {/* Neural Network Visualization */}
-          <div className="absolute inset-0 bg-dark-800 rounded-2xl overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative w-full h-full max-w-xs mx-auto">
-                {/* Nodes */}
-                {Array.from({ length: 30 }).map((_, i) => {
-                  const delay = i * 0.1;
-                  const size = Math.random() * 8 + 2;
-                  const x = Math.random() * 100;
-                  const y = Math.random() * 100;
-                  return (
-                    <motion.div
-                      key={i}
-                      className="absolute rounded-full bg-primary/60"
-                      style={{ 
-                        width: size, 
-                        height: size, 
-                        left: `${x}%`, 
-                        top: `${y}%` 
-                      }}
-                      animate={{
-                        scale: [1, 1.2, 1],
-                        opacity: [0.5, 0.8, 0.5],
-                      }}
-                      transition={{
-                        duration: 3,
-                        repeat: Infinity,
-                        delay,
-                      }}
-                    />
-                  );
-                })}
-                
-                {/* Connection Lines */}
-                <svg className="absolute inset-0 w-full h-full">
-                  {Array.from({ length: 40 }).map((_, i) => {
-                    const x1 = Math.random() * 100;
-                    const y1 = Math.random() * 100;
-                    const x2 = Math.random() * 100;
-                    const y2 = Math.random() * 100;
-                    const delay = i * 0.05;
-                    return (
-                      <motion.line
-                        key={i}
-                        x1={`${x1}%`}
-                        y1={`${y1}%`}
-                        x2={`${x2}%`}
-                        y2={`${y2}%`}
-                        stroke="rgba(99, 102, 241, 0.2)"
-                        strokeWidth="1"
-                        initial={{ pathLength: 0, opacity: 0 }}
-                        animate={{ 
-                          pathLength: 1, 
-                          opacity: [0, 0.4, 0],
-                        }}
-                        transition={{
-                          duration: 3,
-                          repeat: Infinity,
-                          delay,
-                        }}
-                      />
-                    );
-                  })}
-                </svg>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+        <motion.div
+  className="lg:col-span-5 relative"
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: true }}
+  style={{ minHeight: '320px' }} 
+>
+  {/* Container with background */}
+  <div className="absolute inset-0 bg-dark-800 rounded-2xl overflow-hidden flex items-start justify-center">
+    <img
+      src="https://res.cloudinary.com/dejlliwlz/image/upload/v1747402776/my_fgimjx.jpg"
+      alt="Balavardhan Tummalacherla"
+      className="w-full rounded-2xl object-cover h-[350px] sm:h-auto"
+      style={{ objectPosition: 'top' }}
+    />
+  </div>
+</motion.div>
+
       </div>
     </Section>
   );
