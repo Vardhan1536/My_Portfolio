@@ -9,14 +9,14 @@ const Hero: React.FC = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'public/My-resume.pdf';
+    link.href = '/My-resume.pdf';
     link.download = 'resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
   const handleView = () => {
-  window.open('public/My-resume.pdf', '_blank');
+  window.open('/My-resume.pdf', '_blank');
 };
 
 
