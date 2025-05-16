@@ -220,7 +220,7 @@ const Hero: React.FC = () => {
               <Github className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="www.linkedin.com/in/vardhan1536"
+              href="https://www.linkedin.com/in/vardhan1536"
               target="_blank"
               rel="noreferrer"
               className="text-dark-300 hover:text-primary transition-colors"

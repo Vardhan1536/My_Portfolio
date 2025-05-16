@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
             </motion.a>
             
             <motion.a 
-              href="www.linkedin.com/in/vardhan1536" 
+              href="https://www.linkedin.com/in/vardhan1536" 
               target="_blank"
               rel="noreferrer"
               className="w-12 h-12 rounded-full bg-dark-800 hover:bg-dark-700 flex items-center justify-center transition-colors"
