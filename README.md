@@ -18,9 +18,7 @@ This repository contains the source code for my **personal developer portfolio**
 
 | Home Page                             | Projects Section                         |
 |--------------------------------------|------------------------------------------|
-| ![Home](![image](https://github.com/user-attachments/assets/92924f31-279d-4bdb-97ad-7fa500c430c6)
-)  | ![Projects](![image](https://github.com/user-attachments/assets/a5891f95-4569-46c7-ac65-c2b4c87dcf77)
-)   |
+|(![image](https://github.com/user-attachments/assets/92924f31-279d-4bdb-97ad-7fa500c430c6)|(![image](https://github.com/user-attachments/assets/a5891f95-4569-46c7-ac65-c2b4c87dcf77)|
 
 | Contact Section                       |
 |--------------------------------------|
