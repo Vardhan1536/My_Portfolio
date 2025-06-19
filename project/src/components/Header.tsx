@@ -30,7 +30,7 @@ const Header: React.FC = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.4 }
     );
 
     sections.forEach(section => {
