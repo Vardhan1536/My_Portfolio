@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
   return (
     <Section id="projects" title="Projects">
       {/* Featured Projects (larger cards) */}
-      <div className="mb-16">
+      <div className="mb-10">
         <h3 className="text-xl font-medium text-dark-200 mb-8">Featured Work</h3>
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
@@ -73,8 +73,7 @@ const Projects: React.FC = () => {
                         size="sm" 
                         icon={<ExternalLink className="w-4 h-4" />}
                         href={project.demoUrl}
-                      >
-                        Demo Video
+                      >{project.demoType}
                       </Button>
                     </div>
                   </div>
@@ -84,7 +83,7 @@ const Projects: React.FC = () => {
         </motion.div>
       </div>
     {/* Other Projects (smaller grid) */}
-<div>
+{/* <div>
   <h3 className="text-xl font-medium text-dark-200 mb-8">Other Projects</h3>
   <Card className="h-full flex flex-col items-center justify-center text-center p-6 bg-opacity-70  rounded-2xl border border-white/10 shadow-lg">
     <h2 className="text-2xl font-semibold text-purple-400 mb-2 animate-pulse">
@@ -97,7 +96,7 @@ const Projects: React.FC = () => {
       Projects will be deployed here soon.
     </p>
   </Card>
-</div>
+</div> */}
     </Section>
   );
 };

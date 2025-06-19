@@ -59,32 +59,17 @@ export const experience: Experience[] = [
   {
     id: 1,
     title: 'Full Stack Developer Intern (Part-time)',
-    company: 'PARABOLA9 (MNC)',
+    company: 'PARABOLA9',
     location: 'Remote',
     startDate: 'DEC 2024',
-    endDate: 'MAY 2025', 
+    endDate: 'MARCH 2025', 
     description: 'Developed a web application for a startup focused on data visualization and analytics.',
     highlights: [
       'Gained real-world experience in Web development and project management in this MNC internship',
-      'Spearheaded the development of Parabola9 initial web platform using React.js, later migrating to Next.js for improved performance and SEO',      'Developed frontend components using ReactJs and NextJs',
-      'Implemented efficient Git workflows for version control, including branching strategies, pull requests, and code merging',
+      'Assisted the project development team with backend setup and YOLO integration, gaining initial hands-on experience with the technologies.',
+      'Spearheaded the development of Parabola9 initial web platform using React.js, later migrating to Next.js for improved performance and SEO',     
       'Participated in code reviews and contributed to documentation',
-      'Contributed to technical documentation and onboarding guides to streamline future development and team scalability',
       'Collaborated with cross-functional teams in an Agile environment, contributing to daily stand-ups, sprint planning, and retrospectives',
-      'Collaborated with designers to implement UI/UX best practices.'
-    ],
-  },
-   {
-    id: 2,
-    title: 'Web Developer Intern (Part-time)',
-    company: 'Code Alpha',
-    location: 'Remote',
-    startDate: 'Mar 2024',
-    endDate: 'Aug 2024', 
-    description: 'This is was my first internship where I worked on a project to develop a web application for a startup.',
-    highlights: [
-      'Gained time management skills and learned to work in a team environment',
-      'Developed a web application using React.js and Node.js, focusing on responsive design and user experience',
     ],
   },
 ];
